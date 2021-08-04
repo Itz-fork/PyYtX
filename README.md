@@ -9,6 +9,7 @@ pip3 install PyYtX
 
 ## Currently Supporting Features,
 - Get Thumbnail Urls From a Youtube Video
+- Downlaod Thumbnails From Youtube Video or Thumbnail Url
 
 More Features Coming Soon...
 
@@ -26,4 +27,66 @@ url = "https://youtu.be/VaybjAk3dEY"
 max_thumb, standered_thumb = PyYtX.get_thumb(url)
 
 print(f"Best Thumbnail Url: {max_thumb} \nStandard quality: {standered_thumb}")
+```
+#### Download Youtube Thumbnail Urls
+**Example 1.1 - Download Thumbnail by It's Url,**
+```python
+from PyYtX import PyYtX
+
+# Your Youtube Thumbnail Url here
+url = "https://img.youtube.com/vi/O9UgaCWN2Ag/maxresdefault.jpg"
+# Create a url list
+url = [url]
+
+# Now Download the thumbnails in "url" list
+# Default path is 'pyytx_img'. You can change it, see Example 2
+PyYtX.download_thumbs(url)
+```
+**Example 1.2 - Download Thumbnail by It's Url to a Specific Folder,**
+```python
+from PyYtX import PyYtX
+
+# Enter Your Youtube Thumbnail Url here
+url = "https://img.youtube.com/vi/O9UgaCWN2Ag/maxresdefault.jpg"
+# Enter Your Folder Here
+path = "/home/itzfork/PyYtX_Images"
+# Create a url list
+url = [url]
+
+# Now Download the thumbnails in "url" list to 'PyYtX_Images' Folder
+PyYtX.download_thumbs(url, path=path)
+```
+
+**Example 2.1 - Download Thumbnails by Youtube Video Url**
+```python
+from PyYtX import PyYtX
+
+# Your Youtube Video Url here
+url = "https://www.youtube.com/watch?v=O9UgaCWN2Ag&pp=sAQA"
+# Now get thumbnial urls. To Know about resolutions see 'Example 1.1'
+max_thumb, standered_thumb = PyYtX.get_thumb(url)
+# Create a url list You can choose which one you want to download
+# I'll choose 'max_thumb'. You can download both if you want
+url = [max_thumb]
+
+# Now Download the thumbnails in "url" list
+# Default path is 'pyytx_img'. You can change it, see Example 2
+PyYtX.download_thumbs(url)
+```
+**Example 2.2 - Download Thumbnail by Youtube Video Ur to a Specific Folder,**
+```python
+from PyYtX import PyYtX
+
+# Your Youtube Video Url here
+url = "https://www.youtube.com/watch?v=O9UgaCWN2Ag&pp=sAQA"
+# Now get thumbnial urls. To Know about resolutions see 'Example 1.1'
+max_thumb, standered_thumb = PyYtX.get_thumb(url)
+# Create a url list You can choose which one you want to download
+# I'll choose 'max_thumb'. You can download both if you want
+url = [max_thumb]
+# Enter Your Folder Here
+path = "/home/itzfork/PyYtX_Images"
+
+# Now Download the thumbnails in "url" list to 'PyYtX_Images' Folder
+PyYtX.download_thumbs(url, path=path)
 ```
