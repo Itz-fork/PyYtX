@@ -29,7 +29,7 @@ download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.5.tar.gz",
 keywords=['python', 'youtube', 'PyYtX'],
 install_requires=reques,
 classifiers=[
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',
