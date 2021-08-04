@@ -32,6 +32,7 @@ class PyYtX:
             elif download is True:
                 urls = [max_thumb, standered_thumb]
                 PyYtX.download_thumbs(urls, path)
+                return max_thumb, standered_thumb
         except Exception as e:
             logging.error(e)
     
