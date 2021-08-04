@@ -19,7 +19,7 @@ Here are some examples to get started.
 ```python
 from PyYtX import PyYtX
 
-# Your Youtube Url hee
+# Your Youtube Url here
 url = "https://youtu.be/VaybjAk3dEY"
 
 # max_thumb = Thumbnail with the maximum quality
@@ -91,4 +91,18 @@ path = "/home/itzfork/PyYtX_Images"
 
 # Now Download the thumbnails in "url" list to 'PyYtX_Images' Folder
 PyYtX.download_thumbs(url, path=path)
+```
+
+</br>
+
+**Example 3 - Download Thumbnails while extracting Thumbnail Urls,**
+```python
+from PyYtX import PyYtX
+
+# Your Youtube Url hee
+url = "https://youtu.be/VaybjAk3dEY"
+
+# Now download Thumbnails. This will download both
+# For Custom Paths See Above Examples
+PyYtX.get_thumb(url, download=True)
 ```
