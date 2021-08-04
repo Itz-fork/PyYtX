@@ -9,7 +9,7 @@ pip3 install PyYtX
 
 ## Currently Supporting Features,
 - Get Thumbnail Urls From a Youtube Video
-- Downlaod Thumbnails From Youtube Video or Thumbnail Url
+- Download Thumbnails From Youtube Video or Thumbnail Url
 
 More Features Coming Soon...
 
