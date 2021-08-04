@@ -57,6 +57,8 @@ url = [url]
 PyYtX.download_thumbs(url, path=path)
 ```
 
+</br></br>
+
 **Example 2.1 - Download Thumbnails by Youtube Video Url**
 ```python
 from PyYtX import PyYtX
