@@ -96,6 +96,7 @@ PyYtX.download_thumbs(url, path=path)
 </br>
 
 **Example 3 - Download Thumbnails while extracting Thumbnail Urls,**
+Don't try to Extract thumbnail urls with this!
 ```python
 from PyYtX import PyYtX
 
