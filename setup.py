@@ -8,19 +8,24 @@ from setuptools import setup, find_packages
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 # Getting the requirements
-with open('requirements.txt') as req:
+if os.path.isfile('requirements.txt'):
+  with open('requirements.txt') as req:
     reques = req.read().splitlines()
+else:
+  reques = [
+    'wget'
+  ]
 
 
 setup(name='PyYtX',
-version='0.3',
+version='0.4',
 description='A Simple Python Program to Get Best Possible Thumbnail Urls From a Youtube Video Link',
 url='https://github.com/Itz-fork/PyYtX',
 author='Itz-fork',
 author_email='itz-fork@users.noreply.github.com',
 license='MIT',
 packages=find_packages(),
-download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.3.tar.gz",
+download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.4.tar.gz",
 keywords=['python', 'youtube', 'PyYtX'],
 install_requires=reques,
 classifiers=[
