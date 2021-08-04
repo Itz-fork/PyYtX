@@ -17,22 +17,22 @@ else:
   ]
 
 # Getting the long description
-if os.path.isfile('requirements.txt'):
-  with open(('requirements.txt'), encoding='utf-8') as readmeh:
+if os.path.isfile('README.md'):
+  with open(('README.md'), encoding='utf-8') as readmeh:
     big_description = readmeh.read()
 else:
   big_description = "PyYtX - A Simple Python Library to Get Details About a Youtube Video."
 
 
 setup(name='PyYtX',
-version='0.6',
+version='0.6.5',
 description='A Simple Python Program to Get Best Possible Thumbnail Urls From a Youtube Video Link',
 url='https://github.com/Itz-fork/PyYtX',
 author='Itz-fork',
 author_email='itz-fork@users.noreply.github.com',
 license='MIT',
 packages=find_packages(),
-download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.6.tar.gz",
+download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.6.5.tar.gz",
 keywords=['python', 'youtube', 'PyYtX'],
 long_description=big_description,
 long_description_content_type='text/markdown',
