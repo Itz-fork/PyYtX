@@ -13,14 +13,14 @@ with open('requirements.txt') as req:
 
 
 setup(name='PyYtX',
-version='0.2',
+version='0.3',
 description='A Simple Python Program to Get Best Possible Thumbnail Urls From a Youtube Video Link',
 url='https://github.com/Itz-fork/PyYtX',
 author='Itz-fork',
 author_email='itz-fork@users.noreply.github.com',
 license='MIT',
 packages=find_packages(),
-download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.2.tar.gz",
+download_url="https://github.com/Itz-fork/PyYtX/archive/refs/tags/v0.3.tar.gz",
 keywords=['python', 'youtube', 'PyYtX'],
 install_requires=reques,
 classifiers=[
